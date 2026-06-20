@@ -1,0 +1,32 @@
+[2.57s - 4.07s] SPEAKER_01:  Set a press conference at 12 o'clock.
+[4.49s - 6.09s] SPEAKER_01: Make sure the post takes the first question.
+[7.81s - 9.20s] SPEAKER_01: You know what the first question's gonna be.
+[9.90s - 11.26s] SPEAKER_01: Whose bullet was it?
+[11.28s - 12.10s] SPEAKER_01: Call Senator Marquand.
+[12.12s - 12.56s] SPEAKER_01: Be cool.
+[12.60s - 13.62s] SPEAKER_01: Tell him everything's under control.
+[13.66s - 15.30s] SPEAKER_01: Of course the mayor's on with him tonight.
+[15.36s - 17.08s] SPEAKER_01: I'm just trying to stay ahead of the curve here.
+[17.28s - 17.56s] SPEAKER_01: Yes.
+[17.76s - 20.96s] SPEAKER_01: And call Leonard Street and get a copy of Tino Zapati's probation report.
+[21.70s - 22.55s] SPEAKER_01: Which Zapati is that?
+[23.23s - 23.63s] SPEAKER_01: A nephew.
+[23.67s - 24.27s] SPEAKER_01: Warned conviction.
+[24.29s - 25.35s] SPEAKER_01: He got off on probation.
+[25.37s - 25.89s] SPEAKER_01: He's a punk.
+[26.85s - 28.51s] SPEAKER_01: We're headed for Park Drive, downtown at 20.
+[28.91s - 30.45s] SPEAKER_02: How's about we swing over to the FDR?
+[30.47s - 31.27s] SPEAKER_02: We'll make better time.
+[34.26s - 35.06s] SPEAKER_01:  Sir, what's your pleasure?
+[39.05s - 39.97s] SPEAKER_01: Where did the boy live?
+[40.45s - 41.57s] SPEAKER_01: Rainbow One, Rainbow Two.
+[41.59s - 43.43s] SPEAKER_01: Give me a read on the boy's apartment.
+[43.53s - 44.77s] SPEAKER_02: 515 South 5th Street.
+[45.55s - 47.39s] SPEAKER_01: 5th Street, just off Marcy and Broadway.
+[47.81s - 48.87s] SPEAKER_02: Okay, that's where we're gonna go.
+[49.35s - 50.39s] SPEAKER_01: We've got no advancement.
+[50.41s - 51.33s] SPEAKER_01: We've got no protection.
+[51.35s - 52.05s] SPEAKER_01: It's okay, Kevin.
+[52.21s - 52.89s] SPEAKER_01: That's where we're going.
+[53.13s - 53.59s] SPEAKER_01: I'm the mayor.
+[64.87s - 65.83s] SPEAKER_01:  Father's seated in the corner.
