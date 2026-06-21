@@ -51,7 +51,7 @@ chmod +x start.sh
 
 ```bash
 cd backend
-ANTHROPIC_API_KEY=sk-ant-xxxxxxxx python app.py
+python app.py
 ```
 
 ### 3. Open the app
@@ -67,7 +67,7 @@ Run backend and frontend separately:
 ```bash
 # Terminal 1 — Flask backend
 cd backend
-ANTHROPIC_API_KEY=sk-ant-xxxxxxxx python app.py
+python app.py
 
 # Terminal 2 — React dev server (proxies /api to Flask)
 cd frontend
@@ -78,33 +78,11 @@ Open [http://localhost:3000](http://localhost:3000) for hot-reload React.
 
 ---
 
-## Adding Real Transcription (Production)
-
-The current backend uses Claude to generate a placeholder transcript.
-For real audio transcription, integrate **OpenAI Whisper**:
-
-```python
-# In backend/app.py, replace generate_transcript() with:
-import whisper
-
-def generate_transcript(filepath, filename):
-    model = whisper.load_model("base")
-    result = model.transcribe(filepath)
-    
-    lines = []
-    for seg in result["segments"]:
-        t = int(seg["start"])
-        h, m, s = t // 3600, (t % 3600) // 60, t % 60
-        lines.append(f"[{h:02d}:{m:02d}:{s:02d}] {seg['text'].strip()}")
-    return "\n".join(lines)
-```
-
-Install with: `pip install openai-whisper ffmpeg-python`
-
----
 
 ## Features
 
+- **Role-based Conversation
+- **Combination of both image-to-text and text-to-text generation.
 - **Two-column layout** — load data left, query right
 - **Video upload** with file-path display
 - **Custom video player** — play/pause, scrub bar, timestamps
