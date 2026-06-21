@@ -81,8 +81,8 @@ Open [http://localhost:3000](http://localhost:3000) for hot-reload React.
 
 ## Features
 
-- **Role-based Conversation
-- **Combination of both image-to-text and text-to-text generation.
+- **Role-based Conversation**
+- **Combination of both image-to-text and text-to-text generation**
 - **Two-column layout** — load data left, query right
 - **Video upload** with file-path display
 - **Custom video player** — play/pause, scrub bar, timestamps
