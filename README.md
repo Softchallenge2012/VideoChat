@@ -37,7 +37,6 @@ videochat/
 ### Requirements
 - Python 3.9+
 - Node.js 18+
-- An [Anthropic API key](https://console.anthropic.com/)
 
 ### 1. Install & build
 
