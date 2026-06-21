@@ -4,6 +4,9 @@ A two-column web app to upload a video, auto-generate its transcript, and chat w
 
 ---
 
+<div align="center">
+  <img src="https://github.com/Softchallenge2012/VideoChat/blob/main/ui.png"></img>
+</div>
 ## Architecture
 
 ```
