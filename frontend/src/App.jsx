@@ -190,6 +190,7 @@ export default function App() {
   const [filePath, setFilePath] = useState("");
 
   const [query, setQuery] = useState("");
+  const [role, setRole] = useState("manager");
   const [chatHistory, setChatHistory] = useState([]);
   const [querying, setQuerying] = useState(false);
 
@@ -252,7 +253,7 @@ export default function App() {
       const res = await fetch(`${API_BASE}/query`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: userMsg, transcript, history: chatHistory })
+        body: JSON.stringify({ query: userMsg, transcript, history: chatHistory, role, filepath: filePath, filename: videoFilename })
       });
       const data = await res.json();
       if (data.success) {
@@ -468,6 +469,7 @@ export default function App() {
                 {chatHistory.map((msg, i) => (
                   <ChatBubble key={i} role={msg.role} content={msg.content} />
                 ))}
+
                 {querying && (
                   <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "8px 0" }}>
                     <div style={{
@@ -509,6 +511,32 @@ export default function App() {
             }}
               onFocus={() => { }} // handled by CSS
             >
+              <select
+                value={role}
+                onChange={e => setRole(e.target.value)}
+                style={{
+                  border: "1px solid #DDD6FE",
+                  borderRadius: 10,
+                  padding: "8px 24px 8px 10px",
+                  fontSize: 13,
+                  color: "#7C3AED",
+                  background: "#F5F3FF url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path d='M1 3l4 4 4-4' stroke='%237C3AED' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>\") no-repeat right 8px center",
+                  backgroundSize: "10px",
+                  fontFamily: "'Inter', sans-serif",
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  outline: "none",
+                  alignSelf: "center",
+                  WebkitAppearance: "none",
+                  MozAppearance: "none",
+                  appearance: "none",
+                  minWidth: 100
+                }}
+              >
+                <option value="manager">Manager</option>
+                <option value="teacher">Teacher</option>
+                <option value="parent">Parent</option>
+              </select>
               <textarea
                 value={query}
                 onChange={e => setQuery(e.target.value)}
@@ -517,7 +545,7 @@ export default function App() {
                 rows={1}
                 style={{
                   flex: 1, border: "none", background: "transparent",
-                  resize: "none", fontSize: 14, color: "#111827",
+                  resize: "none", fontSize: 13, color: "#111827",
                   fontFamily: "'Inter', sans-serif", lineHeight: 1.5,
                   maxHeight: 120, overflow: "auto"
                 }}
